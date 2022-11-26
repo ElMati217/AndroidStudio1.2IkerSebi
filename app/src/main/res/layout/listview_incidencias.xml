@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icono"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tipo_elemento"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usuario_creador" />
+
+        <TextView
+            android:id="@+id/elemento"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_elemento" />
+
+        <TextView
+            android:id="@+id/ubicacion"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elemento" />
+
+        <TextView
+            android:id="@+id/fecha_creacion"
+            android:layout_width="220dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/icono"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id_incidencia"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icono" />
+
+        <TextView
+            android:id="@+id/usuario_creador"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_incidencia" />
+
+        <TextView
+            android:id="@+id/cuerpo"
+            android:layout_width="220dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/icono"
+            app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="220dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/icono"
+            app:layout_constraintTop_toBottomOf="@+id/fecha_creacion" />
+
+        <Button
+            android:id="@+id/boton_cerrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:text="Cerrar Incidencia"
+            app:backgroundTint="#AC3C3C"
+            app:layout_constraintStart_toEndOf="@+id/ubicacion"
+            app:layout_constraintTop_toBottomOf="@+id/cuerpo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
